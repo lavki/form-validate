@@ -1,0 +1,17 @@
+@import url('../../css/html5reset.css');
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+
+body {
+    font-family: 'Merriweather', serif;
+    font-size: 16px;
+    color: #333; }
+
+h1{
+    font-size: 2em;
+    line-height: 200%;
+    text-align: center;
+}
+
+.chocolate{
+    color: chocolate;
+}

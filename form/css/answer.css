@@ -1,0 +1,42 @@
+.answer{
+    display: none;
+    background: white;
+    border: 1px solid #d1d1d1;
+    max-width: 253px;
+    padding: 12px 12px 10px 12px;
+    border-radius: 0 4px 4px 4px;
+    position: relative;
+    top: -41px;
+    left: 0;
+    opacity: 0;
+    box-shadow: 2px 2px 4px #ddd;
+    transition: ease .5s }
+
+.answer:before {
+    content: '';
+    position: absolute;
+    top: -.05em;
+    left: -10px;
+    border-width: 0px 10px 38px 0;
+    border-style: solid;
+    border-color: transparent; }
+
+.answer.success {
+    display: block;
+    border-color: #42a948;
+    opacity: 1;
+    left: 290px;
+    transition: ease .5s }
+    
+.answer.success:before {
+    border-color: transparent #42a948; }
+
+.answer.error {
+    display: block;
+    border-color: chocolate;
+    opacity: 1;
+    left: 290px;
+    transition: ease .5s }
+    
+.answer.error:before {
+    border-color: transparent chocolate; }

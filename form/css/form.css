@@ -1,0 +1,104 @@
+form {
+    border: 1px solid #ddd;
+    padding: 1em 2em;
+    width: 279px;
+    margin: 0 auto;
+    border-radius: 4px; }
+
+.form-block {
+    margin: 1em 0;
+    max-height: 61px; }
+
+label {
+    display: block;
+    margin-bottom: .3em;
+    font-weight: bold; }
+
+input {
+    border: 1px solid #d1d1d1;
+    padding: 12px;
+    border-radius: 4px 0 4px 4px;
+    width: 250px;
+    border-left: 5px solid;
+    outline: 0;
+    box-shadow: none; }
+
+input:required:invalid,
+input:focus:invalid {
+    border-color: chocolate; }
+
+input:required:valid {
+    border-color: #42a948 !important; }
+
+input:focus {
+    border-color: cornflowerblue; }
+
+input::-webkit-input-placeholder {
+    opacity: 1;
+    -webkit-transition: ease .5s;
+       -moz-transition: ease .5s;
+         -o-transition: ease .5s;
+            transition: ease .5s; }
+
+input::ms-input-placeholder {
+    opacity: 1;
+    -webkit-transition: ease .5s;
+       -moz-transition: ease .5s;
+         -o-transition: ease .5s;
+            transition: ease .5s; }
+
+input:ms-input-placeholder {
+    opacity: 1;
+    -webkit-transition: ease .5s;
+       -moz-transition: ease .5s;
+         -o-transition: ease .5s;
+            transition: ease .5s; }
+
+input::moz-placeholder {:-moz-placeholder
+    opacity: 1;
+    -webkit-transition: ease .5s;
+       -moz-transition: ease .5s;
+         -o-transition: ease .5s;
+            transition: ease .5s; }
+
+input:moz-placeholder {
+    opacity: 1;
+    -webkit-transition: ease .5s;
+       -moz-transition: ease .5s;
+         -o-transition: ease .5s;
+            transition: ease .5s; }
+
+input:focus::-webkit-input-placeholder{
+    opacity: 0;
+    -webkit-transition: ease .5s;
+       -moz-transition: ease .5s;
+         -o-transition: ease .5s;
+            transition: ease .5s; }
+
+input:focus::-moz-placeholder{
+    opacity: 0;
+    -webkit-transition: ease .5s;
+       -moz-transition: ease .5s;
+         -o-transition: ease .5s;
+            transition: ease .5s; }
+
+input:focus::-ms-input-placeholder{
+    opacity: 0;
+    -webkit-transition: ease .5s;
+       -moz-transition: ease .5s;
+         -o-transition: ease .5s;
+            transition: ease .5s; }
+
+input:focus:-ms-input-placeholder{
+    opacity: 0;
+    -webkit-transition: ease .5s;
+       -moz-transition: ease .5s;
+         -o-transition: ease .5s;
+            transition: ease .5s; }
+
+input:focus:-moz-placeholder{
+    opacity: 0;
+    -webkit-transition: ease .5s;
+       -moz-transition: ease .5s;
+         -o-transition: ease .5s;
+            transition: ease .5s; }

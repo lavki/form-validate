@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Valentyn Sudaryk">
+    <title>Form Template</title>
+    <link rel="stylesheet" href="css/basic.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/answer.css">
+  </head>
+
+  <body>
+    <h1>Form Template</h1>
+    
+    <form action="#" method="post">
+    
+      <div class="form-block">
+        <label for="folder"><span class="chocolate">*</span> Назва директорії: </label>
+        <input type="text" name="folder" id="folder" placeholder="folder_name_1" pattern="[a-z_0-9]{3,}" required>
+        <div class="answer">Answer Block</div>
+      </div><!-- /.form-block -->
+      
+      <div class="form-block">
+        <label for="menu">Пункт меню: </label>
+        <input type="text" name="menu" id="menu" placeholder="Головна">
+        <div class="answer">Answer Block</div>
+      </div><!-- /.form-block -->
+      
+    </form>
+
+
+    <script src="../js/jquery.js"></script>
+    <script src="js/form.js"></script>
+  </body>
+</html>

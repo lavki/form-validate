@@ -7,20 +7,22 @@ $(document).ready(function()
             answer  = $(this).parent().find('.answer'),
             pattern = new RegExp('[a-z_0-9]{3,}');
 
-        function message(rem, add, msg) {
+        function message(add, msg) {
             answer.fadeIn(500, function(){
-                answer.removeClass(rem).addClass(add).html(msg).delay(5000).fadeOut(500);
+                answer.addClass(add).html(msg).delay(3000).fadeOut(500, function(){
+                    answer.removeClass(add);
+                });
             }); 
         }
         
         if(value === '') {
-            message('success', 'error', 'Поле не може бути пустим.');
+            message('error', 'Поле не може бути пустим.');
         } else if(value.length < 3) {
-            message('success', 'error', 'Введіть принаймні 3-и символи.');
+            message('error', 'Введіть принаймні 3-и символи.');
         } else if(value != value.match(pattern)) {
-            message('success', 'error', 'Дозволено лише латинські маленькі літери, цифри та нижній слеш.');
+            message('error', 'Дозволено лише латинські маленькі літери, цифри та нижній слеш.');
         } else {
-            message('error', 'success', 'Подальша обробка Ajax-ом...'); }
+            message('success', 'Валідація пройшла успішно.'); }
     });
 });
 
